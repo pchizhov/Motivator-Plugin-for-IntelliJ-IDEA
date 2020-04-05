@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>ifmo.plugin.SendMesPlugin</id>
+    <name>SendMesPlug</name>
+    <vendor email="" url="">ITMO</vendor>
+
+    <description>This plugin is about sending motivating message? when you open your project.
+        It made for course development tools by Paul Chizhov and Artem Davletov from ITMO University.</description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <project-components>
+        <component>
+            <implementation-class>
+                main.java.Motivator
+            </implementation-class>
+        </component>
+    </project-components>
+
+</idea-plugin>
